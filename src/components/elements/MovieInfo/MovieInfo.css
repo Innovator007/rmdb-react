@@ -152,12 +152,30 @@ meter::-webkit-meter-even-less-good-value {
     overflow: hidden;
     padding: 20px;
   }
+  .rmdb-flexcontainer {
+    display: flex;
+    flex-direction: column;
+  }
   .movie_title {
     font-size: 24px;
   }
   .rmdb-movieinfo-text p {
     font-size: 14px;
     line-height: 1.1;
+  }
+  .rmdb-movieinfo h4 {
+    margin: 5px 0;
+  }
+  .rmdb-movieinfo-info li {
+    border-right: none;
+    margin-right: 5px;
+    padding-right: 5px;
+    font-family: 'Abel',sans-serif;
+  }
+
+  .rmdb-movieinfo-info li:last-child {
+    border-right: none;
+    margin-right: 0;
   }
   .fa-film {
     display: none;
