@@ -9,6 +9,12 @@
   font-size: 22px;
 }
 
+@media (max-width: 768px) {
+  .rmdb-movieinfobar {
+    height: 190px;
+  }
+}
+
 .rmdb-movieinfobar-content {
   max-width: 1280px;
   width: 100%;
@@ -21,6 +27,14 @@
   width: 33.33%;
   box-sizing: border-box;
   padding: 0 20px 0 0;
+}
+
+@media (max-width: 768px) {
+  .rmdb-movieinfobar-content-col {
+    width: 100%;
+    float: left;
+    margin: 5px auto 0 auto;
+  }
 }
 
 .rmdb-movieinfobar-info {

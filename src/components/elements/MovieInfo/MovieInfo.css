@@ -18,12 +18,25 @@
 }
 
 .rmdb-movieinfo-content {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
+  display: flex;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   background: rgb(0, 0, 0, 0.7);
   position: relative;
+}
+
+@media(max-width: 768px) {
+  
+  .rmdb-movieinfo {
+    width: 100vw;
+    padding: 20px 10px;
+  }
+
+  .rmdb-movieinfo-content {
+    flex-direction: column;
+  }
 }
 
 .rmdb-flexcontainer {
@@ -63,8 +76,14 @@
   left: 0px;
 }
 
+@media (max-width: 768px) {
+  .rmdb-movieinfo-thumb {
+    display: none;
+  }
+}
+
 .rmdb-movieinfo-text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Abel', sans-serif;
   height: 100%;
   width: auto;
   padding: 40px;
@@ -73,6 +92,15 @@
   box-sizing: border-box;
   position: absolute;
   left: 360px;
+}
+
+@media (max-width: 768px) {
+  .rmdb-movieinfo-text {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 .rmdb-movieinfo-text h1 {
@@ -116,6 +144,12 @@
   bottom: 40px;
   right: 40px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .fa-film {
+    display: none;
+  }
 }
 
 meter::-webkit-meter-bar {
