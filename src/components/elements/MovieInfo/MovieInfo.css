@@ -27,18 +27,6 @@
   position: relative;
 }
 
-@media(max-width: 768px) {
-  
-  .rmdb-movieinfo {
-    width: 100vw;
-    padding: 20px 10px;
-  }
-
-  .rmdb-movieinfo-content {
-    flex-direction: column;
-  }
-}
-
 .rmdb-flexcontainer {
   display: flex;
 }
@@ -76,12 +64,6 @@
   left: 0px;
 }
 
-@media (max-width: 768px) {
-  .rmdb-movieinfo-thumb {
-    display: none;
-  }
-}
-
 .rmdb-movieinfo-text {
   font-family: 'Abel', sans-serif;
   height: 100%;
@@ -94,16 +76,8 @@
   left: 360px;
 }
 
-@media (max-width: 768px) {
-  .rmdb-movieinfo-text {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-  }
-}
 
-.rmdb-movieinfo-text h1 {
+.movie_title {
   font-family: 'Abel', sans-serif;
   font-size:48px;
   margin: 0;
@@ -120,6 +94,8 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+
 
 .rmdb-rating {
   width: 250px;
@@ -146,12 +122,6 @@
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .fa-film {
-    display: none;
-  }
-}
-
 meter::-webkit-meter-bar {
   background: #FFF;
   width:200px;
@@ -164,4 +134,32 @@ meter::-webkit-meter-suboptimum-value {
 }
 meter::-webkit-meter-even-less-good-value {
   background: linear-gradient(to bottom, #ee5f5b);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .rmdb-movieinfo {
+    width: 100vw;
+    padding: 20px 10px;
+  }
+  .rmdb-movieinfo-thumb {
+    display: none;
+  }
+  .rmdb-movieinfo-text {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .movie_title {
+    font-size: 24px;
+  }
+  .rmdb-movieinfo-text p {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  .fa-film {
+    display: none;
+  }
 }

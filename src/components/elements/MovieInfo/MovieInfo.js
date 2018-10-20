@@ -15,7 +15,7 @@ const MovieInfo = (props) => {
 						clickable={false} />
 				</div>
 				<div className="rmdb-movieinfo-text">
-					<h1>{props.movie.title}<span>({props.movie.status})</span></h1>
+					<h1 className="movie_title">{props.movie.title}<span>({props.movie.status})</span></h1>
 					<h3>PLOT</h3>
 					<p>{props.movie.overview}</p>
 					<div className="rmdb-flexcontainer">
