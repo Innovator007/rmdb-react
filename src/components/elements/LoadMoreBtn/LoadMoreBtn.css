@@ -1,0 +1,32 @@
+.rmdb-loadmorebtn {
+  background: #16d47b;
+  width: 42%;
+  border-radius: 50px;
+  margin: 0 auto;
+  min-height: 50px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.rmdb-loadmorebtn p {
+  font-family: 'Abel', sans-serif;
+  font-size:42px;
+  padding: 10px;
+}
+
+.rmdb-loadmorebtn:hover {
+  opacity: 0.8;
+  width: 50%;
+}
+
+@media(max-width: 768px) {
+  .rmdb-loadmorebtn {
+    width: 100%;
+  }
+  .rmdb-loadmorebtn:hover {
+    width: 100%;
+  }
+}

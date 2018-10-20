@@ -1,0 +1,27 @@
+.rmdb-notfound {
+	margin: 30px auto;
+	width: 50%;
+	height: auto;
+}
+
+.rmdb-notfound p {
+	font-family: 'Abel',sans-serif;
+	font-size: 20px;
+}
+
+.rmdb-notfoundbtn {
+	padding: 20px;\
+	font-family: 'Abel',sans-serif;
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	outline: none;
+	background-color: #16d47b;
+	width: 100%;
+	border-radius: 50px;
+}
+
+.rmdb-notfoundbtn:hover {
+	opacity: 0.8;
+}
