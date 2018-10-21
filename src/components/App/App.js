@@ -7,7 +7,7 @@ import NotFound from '../NotFound/NotFound';
 
 const App = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
 			<React.Fragment>
 				<Header />
 				<Switch>

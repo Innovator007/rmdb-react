@@ -9,7 +9,6 @@ import Spinner from '../elements/Spinner/Spinner';
 import './Movie.css';
 
 class Movie extends Component {
-	
 	state = {
 		movie: null,
 		actors:null,
@@ -33,7 +32,6 @@ class Movie extends Component {
 		fetch(endpoint)
 		.then(result => result.json())
 		.then(result => {
-			console.log(result);
 			if(result.status_code) {
 				this.setState({loading:false});
 			} else {
@@ -87,7 +85,6 @@ class Movie extends Component {
 			</div>
 		);
 	}
-
 }
 
 export default Movie;
