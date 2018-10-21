@@ -26,3 +26,10 @@
   text-decoration: none;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .rmdb-navigation-content p {
+    font-size: 20px;
+    padding-right: 0;
+  }  
+}

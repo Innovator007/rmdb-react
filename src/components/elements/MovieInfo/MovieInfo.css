@@ -173,6 +173,10 @@ meter::-webkit-meter-even-less-good-value {
     font-family: 'Abel',sans-serif;
   }
 
+  .rmdb-score {
+    margin-top: 7px;
+  }
+
   .rmdb-movieinfo-info li:last-child {
     border-right: none;
     margin-right: 0;
